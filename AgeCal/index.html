@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Age Calculator</h1>
+  </header>
+
+  <main>
+    <div class="section">
+      <h2>Today's Date</h2>
+      <div class="input-box">
+        <input type="date" id="todayDate">
+        <div class="calendar-icon"></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Date of Birth</h2>
+      <div class="input-box">
+        <input type="date" id="dob">
+        <div class="calendar-icon"></div>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <button onclick="calculateAge()">Calculate</button>
+      <button onclick="resetForm()">Reset</button>
+    </div>
+
+    <div class="result">
+      <h2>Your Age</h2>
+      <div class="output">
+        <div><strong>Years</strong><p id="years">0</p></div>
+        <div><strong>Months</strong><p id="months">0</p></div>
+        <div><strong>Days</strong><p id="days">0</p></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
